@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Monogame Projects/Lab06/Content/crosshair179.png</SourceFile>
-  <SourceTime>2018-05-13T06:39:52+08:00</SourceTime>
-  <DestFile>C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/crosshair179.xnb</DestFile>
-  <DestTime>2025-12-09T10:36:38.4075562+08:00</DestTime>
+  <SourceFile>D:/Monogame/Lab06-ShooterGame/Content/crosshair179.png</SourceFile>
+  <SourceTime>2026-01-05T11:41:39.768366+08:00</SourceTime>
+  <DestFile>D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/crosshair179.xnb</DestFile>
+  <DestTime>2026-01-05T11:42:50.407751+08:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -1,16 +1,18 @@
-﻿using System;
+﻿using GAlgoT2530.Engine;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GAlgoT2530.Engine;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
 
 namespace Lab06
 {
-    public class Spaceship : SpriteGameObject
+    public class Spaceship : SpriteGameObject, ICollidable
     {
         public float Speed;
         public float FiringRate = 1f; // Missiles per second
@@ -24,9 +26,21 @@ namespace Lab06
         private Vector2 _leftGunVector;
         private Vector2 _rightGunVector;
 
+        private Rectangle _rectangle;
+
+        private SoundEffect _shootingSoundEffect;
+
         public Spaceship(string textureName) : base(textureName)
         {
             
+        }
+
+        public override void LoadContent()
+        {
+            // Reusing SpriteGameObject.LoadContent() will load the texture;
+            base.LoadContent();
+
+            _shootingSoundEffect = _game.Content.Load<SoundEffect>("laserShooting");
         }
 
         public override void Initialize()
@@ -47,6 +61,13 @@ namespace Lab06
 
             _leftGunDirectionFromCentre = _leftGunPoint - Origin;
             _rightGunDirectionFromCentre = _rightGunPoint - Origin;
+
+            _rectangle.Location = Position.ToPoint();
+            _rectangle.Width = Texture.Width;
+            _rectangle.Height = Texture.Height;
+
+            // Listen to non-intersection between Asteroid and Spaceship objects
+            _game.CollisionEngine.Listen(typeof(Asteroid), typeof(Spaceship), CollisionEngine.AABB);
         }
 
         public override void Update()
@@ -95,6 +116,11 @@ namespace Lab06
             {
                 FireMissile();
             }
+
+            else if(mouseState.RightButton == ButtonState.Pressed)
+            {
+                FireBlackHoleMissile();
+            }
         }
 
         public override void Draw()
@@ -129,6 +155,52 @@ namespace Lab06
                 rightMissile.Initialize();
 
                 LastFiredTime = ScalableGameTime.RealTime;
+
+                _shootingSoundEffect.Play();    
+            }
+        }
+
+        private void FireBlackHoleMissile()
+        {
+            if (LastFiredTime + CoolDownTime <= ScalableGameTime.RealTime)
+            {
+                Vector2 direction = new Vector2(MathF.Cos(Orientation), MathF.Sin(Orientation));
+                Vector2 displacement = Texture.Width / 2f * direction;
+
+                // Calculate gun point vectors
+                _leftGunVector = Vector2.Rotate(_leftGunDirectionFromCentre, Orientation);
+                _rightGunVector = Vector2.Rotate(_rightGunDirectionFromCentre, Orientation);
+
+                BlackHoleMissile missile = new BlackHoleMissile();
+                missile.Position = this.Position; //+ displacement;
+                missile.Orientation = this.Orientation;
+                missile.LoadContent();
+                missile.Initialize();
+
+                LastFiredTime = ScalableGameTime.RealTime;
+
+                _shootingSoundEffect.Play();
+            }
+        }
+
+        string ICollidable.GetGroupName()
+        {
+            return this.GetType().Name;
+        }
+
+        Rectangle ICollidable.GetBound()
+        {
+            _rectangle.Location = Position.ToPoint();
+            return _rectangle;
+        }
+
+        void ICollidable.OnCollision(CollisionInfo collisionInfo)
+        {
+            if (collisionInfo.Other is Asteroid)
+            {
+                Debug.WriteLine("Spaceship collided with Asteroid!");
+                //GameObjectCollection.DeInstantiate(this);
+                //_explosionSoundEffect.Play();
             }
         }
     }

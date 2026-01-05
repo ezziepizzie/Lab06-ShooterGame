@@ -38,3 +38,45 @@ C:\Monogame Projects\Lab06\obj\Debug\net9.0\refint\Lab06.dll
 C:\Monogame Projects\Lab06\obj\Debug\net9.0\Lab06.pdb
 C:\Monogame Projects\Lab06\obj\Debug\net9.0\Lab06.genruntimeconfig.cache
 C:\Monogame Projects\Lab06\obj\Debug\net9.0\ref\Lab06.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\crosshair179.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\enemyExplosion.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\laserShooting.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\purple.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\spaceMeteors_002_small.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\spaceMissiles_015_right.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\spaceShips_009_right.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Lab06.exe
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Lab06.deps.json
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Lab06.runtimeconfig.json
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Lab06.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Lab06.pdb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\MonoGame.Framework.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\NVorbis.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\android-arm\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\android-arm64\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\android-x64\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\android-x86\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\ios-arm64\native\libopenal.a
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\iossimulator-arm64\native\libopenal.a
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\iossimulator-x64\native\libopenal.a
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\linux-arm64\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\linux-x64\native\libopenal.so
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\osx\native\libopenal.dylib
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\win-x64\native\openal.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.dll
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\mgcb.tool.restore
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.csproj.AssemblyReference.cache
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.GeneratedMSBuildEditorConfig.editorconfig
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.AssemblyInfoInputs.cache
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.AssemblyInfo.cs
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.csproj.CoreCompileInputs.cache
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.sourcelink.json
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.csproj.Up2Date
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.dll
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\refint\Lab06.dll
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.pdb
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.genruntimeconfig.cache
+D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\ref\Lab06.dll
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\blackHoleMissile.xnb

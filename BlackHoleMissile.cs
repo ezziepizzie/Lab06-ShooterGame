@@ -12,14 +12,20 @@ using System.Threading.Tasks;
 
 namespace Lab06
 {
-    public class Missile : SpriteGameObject, ICollidable
+    public class BlackHoleMissile : SpriteGameObject, ICollidable
     {
         public float Speed = 200f;
         private Vector2 _velocity;
         private Rectangle _rectangle;
         private SoundEffect _explosionSoundEffect;
 
-        public Missile() : base("spaceMissiles_015_right")
+        private float _gravityRadius = 150f;
+        private float _gravityStrength = 500f;
+        private float _lifetime = 5f;
+        private float _activateTime = 0.5f;
+        private float _timeSinceSpawn = 0f;
+
+        public BlackHoleMissile() : base("blackHoleMissile")
         {
 
         }
@@ -50,16 +56,32 @@ namespace Lab06
             _rectangle.Width = Texture.Width;
             _rectangle.Height = Texture.Height;
 
-            // Listen to non-intersection between Background and Missile objects
-            _game.CollisionEngine.Listen(typeof(Background), typeof(Missile), CollisionEngine.NotAABB);
+            // Listen to non-intersection between Background and BlackHoleMissile objects
+            _game.CollisionEngine.Listen(typeof(Background), typeof(BlackHoleMissile), CollisionEngine.NotAABB);
 
-            // Listen to non-intersection between Missile and Asteroid objects
-            _game.CollisionEngine.Listen(typeof(Asteroid), typeof(Missile), CollisionEngine.AABB);
+            // Listen to non-intersection between Asteroid and BlackHoleMissile objects
+            _game.CollisionEngine.Listen(typeof(Asteroid), typeof(BlackHoleMissile), CollisionEngine.AABB);
         }
 
         public override void Update()
         {
-            Position += _velocity * ScalableGameTime.DeltaTime;
+            _timeSinceSpawn += ScalableGameTime.DeltaTime;
+
+            if (_timeSinceSpawn >= _activateTime)
+            {
+                _velocity = Vector2.Zero;
+
+                StartGravityPull();
+            }
+            else
+            {
+                Position += _velocity * ScalableGameTime.DeltaTime;
+            }
+
+            if (_timeSinceSpawn >= _lifetime)
+            {
+                GameObjectCollection.DeInstantiate(this);
+            }
         }
 
         public override void Draw()
@@ -68,6 +90,32 @@ namespace Lab06
             _game.SpriteBatch.Draw(Texture, Position, null, Color.White, Orientation, Origin, Scale, SpriteEffects.None, 0f);
 
             _game.SpriteBatch.End();
+        }
+
+        private void StartGravityPull()
+        {
+            GameObject[] asteroids = GameObjectCollection.FindObjectsByType(typeof(Asteroid));
+
+            if (asteroids == null) return;
+
+            foreach (GameObject obj in asteroids)
+            {
+                Asteroid asteroid = obj as Asteroid;
+
+                if (asteroid == null) continue;
+
+                Vector2 direction = Position - asteroid.Position;
+                float distance = direction.Length();
+
+                if (distance < _gravityRadius)
+                {
+                    asteroid.PullTowardsBlackHole(Position, _gravityStrength);
+                }
+                else
+                {
+                    asteroid.ReturnToInitialVelocity();
+                }
+            }
         }
 
         string ICollidable.GetGroupName()
@@ -88,10 +136,10 @@ namespace Lab06
                 GameObjectCollection.DeInstantiate(this);
             }
 
-            else if (collisionInfo.Other is Asteroid)
+            else if (collisionInfo.Other is Asteroid asteroid)
             {
-                GameObjectCollection.DeInstantiate(this);
-                _explosionSoundEffect.Play();
+                GameObjectCollection.DeInstantiate(asteroid);
+                //_explosionSoundEffect.Play();
             }
         }
     }

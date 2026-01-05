@@ -4,15 +4,17 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Monogame Projects/Lab06/Content/crosshair179.png</File>
-    <File>C:/Monogame Projects/Lab06/Content/enemyExplosion.wav</File>
-    <File>C:/Monogame Projects/Lab06/Content/laserShooting.wav</File>
-    <File>C:/Monogame Projects/Lab06/Content/purple.png</File>
-    <File>C:/Monogame Projects/Lab06/Content/spaceMeteors_002_small.png</File>
-    <File>C:/Monogame Projects/Lab06/Content/spaceMissiles_015_right.png</File>
-    <File>C:/Monogame Projects/Lab06/Content/spaceShips_009_right.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/blackHoleMissile.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/crosshair179.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/enemyExplosion.wav</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/laserShooting.wav</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/purple.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/spaceMeteors_002_small.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/spaceMissiles_015_right.png</File>
+    <File>D:/Monogame/Lab06-ShooterGame/Content/spaceShips_009_right.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
