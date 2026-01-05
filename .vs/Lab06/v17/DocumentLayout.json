@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Monogame Projects\\Lab06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\missile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:missile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\engine\\spritegameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\spritegameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|c:\\monogame projects\\lab06\\engine\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsteroidSpawner.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\AsteroidSpawner.cs",
+              "RelativeDocumentMoniker": "AsteroidSpawner.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\AsteroidSpawner.cs",
+              "RelativeToolTip": "AsteroidSpawner.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T02:41:58.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Asteroid.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Asteroid.cs",
+              "RelativeDocumentMoniker": "Asteroid.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Asteroid.cs",
+              "RelativeToolTip": "Asteroid.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwDsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T03:38:15.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Missile.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Missile.cs",
+              "RelativeDocumentMoniker": "Missile.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Missile.cs",
+              "RelativeToolTip": "Missile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T02:25:32.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScalableGameTime.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Engine\\ScalableGameTime.cs",
+              "RelativeDocumentMoniker": "Engine\\ScalableGameTime.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Engine\\ScalableGameTime.cs",
+              "RelativeToolTip": "Engine\\ScalableGameTime.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:09:46.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Spaceship.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Spaceship.cs",
+              "RelativeDocumentMoniker": "Spaceship.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Spaceship.cs",
+              "RelativeToolTip": "Spaceship.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwHkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:54:23.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameScene.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Engine\\GameScene.cs",
+              "RelativeDocumentMoniker": "Engine\\GameScene.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Engine\\GameScene.cs",
+              "RelativeToolTip": "Engine\\GameScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:34:28.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainScene.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\MainScene.cs",
+              "RelativeDocumentMoniker": "MainScene.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\MainScene.cs",
+              "RelativeToolTip": "MainScene.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:33:51.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Engine\\GameObject.cs",
+              "RelativeDocumentMoniker": "Engine\\GameObject.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Engine\\GameObject.cs",
+              "RelativeToolTip": "Engine\\GameObject.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:28:22.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SpriteGameObject.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Engine\\SpriteGameObject.cs",
+              "RelativeDocumentMoniker": "Engine\\SpriteGameObject.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Engine\\SpriteGameObject.cs",
+              "RelativeToolTip": "Engine\\SpriteGameObject.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:26:00.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:19:17.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Background.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Background.cs",
+              "RelativeDocumentMoniker": "Background.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Background.cs",
+              "RelativeToolTip": "Background.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:09:37.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GameEngine.cs",
+              "DocumentMoniker": "C:\\Monogame Projects\\Lab06\\Engine\\GameEngine.cs",
+              "RelativeDocumentMoniker": "Engine\\GameEngine.cs",
+              "ToolTip": "C:\\Monogame Projects\\Lab06\\Engine\\GameEngine.cs",
+              "RelativeToolTip": "Engine\\GameEngine.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:16:52.048Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
