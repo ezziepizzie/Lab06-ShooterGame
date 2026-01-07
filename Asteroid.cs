@@ -1,5 +1,6 @@
 ﻿using GAlgoT2530.Engine;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace Lab06
         private Vector2 _initialVelocity;
         private Rectangle _rectangle;
 
+        private SoundEffect _asteroidDestroyedSoundEffect;
+
         public Asteroid(string textureName) : base(textureName)
         {
 
@@ -34,6 +37,14 @@ namespace Lab06
             _rectangle.Location = Position.ToPoint();
             _rectangle.Width = Texture.Width;
             _rectangle.Height = Texture.Height;
+        }
+
+        public override void LoadContent()
+        {
+            // Reusing SpriteGameObject.LoadContent() will load the texture;
+            base.LoadContent();
+
+            _asteroidDestroyedSoundEffect = _game.Content.Load<SoundEffect>("asteroidDestroyed");
         }
 
         private Vector2 GenerateRandomPosition()
@@ -101,14 +112,10 @@ namespace Lab06
 
         void ICollidable.OnCollision(CollisionInfo collisionInfo)
         {
-            if (collisionInfo.Other is Missile)
+            if (collisionInfo.Other is BlackHoleMissile || collisionInfo.Other is Spaceship || collisionInfo.Other is RicochetMissile)
             {
                 GameObjectCollection.DeInstantiate(this);
-                //_explosionSoundEffect.Play();
-            }
-            else if (collisionInfo.Other is Spaceship)
-            {
-                //GameObjectCollection.DeInstantiate(this);
+                _asteroidDestroyedSoundEffect.Play();
             }
         }
     }

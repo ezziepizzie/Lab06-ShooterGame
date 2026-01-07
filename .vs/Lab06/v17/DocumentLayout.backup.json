@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "D:\\Monogame\\Lab06-ShooterGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\blackholemissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:blackholemissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\missile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:missile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\richochetmissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:richochetmissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gameobjectcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameobjectcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\blackholemissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:blackholemissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gameobjectcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameobjectcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\spritegameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,18 +51,6 @@
       "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gamescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\scalablegametime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|d:\\monogame\\lab06-shootergame\\engine\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1E26C7D-EEEA-4A52-A18A-280114270C76}|Lab06.csproj|solutionrelative:engine\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -66,11 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Asteroid.cs",
+              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Asteroid.cs",
+              "RelativeDocumentMoniker": "Asteroid.cs",
+              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Asteroid.cs",
+              "RelativeToolTip": "Asteroid.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAHYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T03:38:15.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameObjectCollection.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\GameObjectCollection.cs",
               "RelativeDocumentMoniker": "Engine\\GameObjectCollection.cs",
@@ -83,59 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BlackHoleMissile.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\BlackHoleMissile.cs",
               "RelativeDocumentMoniker": "BlackHoleMissile.cs",
               "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\BlackHoleMissile.cs",
               "RelativeToolTip": "BlackHoleMissile.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAC4AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T05:54:13.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AsteroidSpawner.cs",
-              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\AsteroidSpawner.cs",
-              "RelativeDocumentMoniker": "AsteroidSpawner.cs",
-              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\AsteroidSpawner.cs",
-              "RelativeToolTip": "AsteroidSpawner.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T02:41:58.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Asteroid.cs",
-              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Asteroid.cs",
-              "RelativeDocumentMoniker": "Asteroid.cs",
-              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Asteroid.cs",
-              "RelativeToolTip": "Asteroid.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEgAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T03:38:15.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Missile.cs",
-              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Missile.cs",
-              "RelativeDocumentMoniker": "Missile.cs",
-              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Missile.cs",
-              "RelativeToolTip": "Missile.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T02:25:32.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "ScalableGameTime.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\ScalableGameTime.cs",
               "RelativeDocumentMoniker": "Engine\\ScalableGameTime.cs",
@@ -148,20 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Spaceship.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Spaceship.cs",
               "RelativeDocumentMoniker": "Spaceship.cs",
               "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Spaceship.cs",
               "RelativeToolTip": "Spaceship.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAowK4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAP8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T02:54:23.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "GameScene.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\GameScene.cs",
               "RelativeDocumentMoniker": "Engine\\GameScene.cs",
@@ -174,7 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "Background.cs",
+              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Background.cs",
+              "RelativeDocumentMoniker": "Background.cs",
+              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Background.cs",
+              "RelativeToolTip": "Background.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:09:37.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RichochetMissile.cs",
+              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\RichochetMissile.cs",
+              "RelativeDocumentMoniker": "RichochetMissile.cs",
+              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\RichochetMissile.cs",
+              "RelativeToolTip": "RichochetMissile.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:33:37.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainScene.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\MainScene.cs",
               "RelativeDocumentMoniker": "MainScene.cs",
@@ -182,25 +178,24 @@
               "RelativeToolTip": "MainScene.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:33:51.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:33:51.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "GameObject.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\GameObject.cs",
               "RelativeDocumentMoniker": "Engine\\GameObject.cs",
               "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\GameObject.cs",
               "RelativeToolTip": "Engine\\GameObject.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T02:28:22.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SpriteGameObject.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\SpriteGameObject.cs",
               "RelativeDocumentMoniker": "Engine\\SpriteGameObject.cs",
@@ -208,12 +203,11 @@
               "RelativeToolTip": "Engine\\SpriteGameObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:26:00.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:26:00.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -221,24 +215,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:19:17.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T02:19:17.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Background.cs",
-              "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Background.cs",
-              "RelativeDocumentMoniker": "Background.cs",
-              "ToolTip": "D:\\Monogame\\Lab06-ShooterGame\\Background.cs",
-              "RelativeToolTip": "Background.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T03:09:37.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "GameEngine.cs",
               "DocumentMoniker": "D:\\Monogame\\Lab06-ShooterGame\\Engine\\GameEngine.cs",
               "RelativeDocumentMoniker": "Engine\\GameEngine.cs",

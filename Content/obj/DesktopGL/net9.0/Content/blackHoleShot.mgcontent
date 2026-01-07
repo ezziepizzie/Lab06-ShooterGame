@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/Monogame/Lab06-ShooterGame/Content/blackHoleShot.wav</SourceFile>
+  <SourceTime>2026-01-07T22:21:32.764+08:00</SourceTime>
+  <DestFile>D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/blackHoleShot.xnb</DestFile>
+  <DestTime>2026-01-07T22:25:05.3510517+08:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2025-10-20T22:25:32+08:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

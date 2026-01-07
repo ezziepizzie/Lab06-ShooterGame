@@ -80,3 +80,9 @@ D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.pdb
 D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\Lab06.genruntimeconfig.cache
 D:\Monogame\Lab06-ShooterGame\obj\Debug\net9.0\ref\Lab06.dll
 D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\blackHoleMissile.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\gravity pop.ogg
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\gravity pop.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\asteroidDestroyed.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\blackHoleShot.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\ricochetShot.xnb
+D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\spaceshipDeath.xnb

@@ -19,20 +19,25 @@ namespace Lab06
         public float CoolDownTime;
         public float LastFiredTime;
 
-        private Vector2 _leftGunPoint;
+        /*private Vector2 _leftGunPoint;
         private Vector2 _rightGunPoint;
         private Vector2 _leftGunDirectionFromCentre;
         private Vector2 _rightGunDirectionFromCentre;
         private Vector2 _leftGunVector;
-        private Vector2 _rightGunVector;
+        private Vector2 _rightGunVector;*/
+
+        private Vector2 _gravityPull;
 
         private Rectangle _rectangle;
+        public ControllableMissile _activeMissile;
 
-        private SoundEffect _shootingSoundEffect;
+        private SoundEffect _ricochetMissileSoundEffect;
+        private SoundEffect _blackHoleMissileSoundEffect;
+        private SoundEffect _spaceshipDeathSoundEffect;
 
         public Spaceship(string textureName) : base(textureName)
         {
-            
+
         }
 
         public override void LoadContent()
@@ -40,7 +45,9 @@ namespace Lab06
             // Reusing SpriteGameObject.LoadContent() will load the texture;
             base.LoadContent();
 
-            _shootingSoundEffect = _game.Content.Load<SoundEffect>("laserShooting");
+            _ricochetMissileSoundEffect = _game.Content.Load<SoundEffect>("ricochetShot");
+            _blackHoleMissileSoundEffect = _game.Content.Load<SoundEffect>("blackHoleShot");
+            _spaceshipDeathSoundEffect = _game.Content.Load<SoundEffect>("spaceshipDeath");
         }
 
         public override void Initialize()
@@ -54,13 +61,13 @@ namespace Lab06
             CoolDownTime = 1f / FiringRate;
             LastFiredTime = 0f;
 
-            _leftGunPoint.X = 82;
+            /*_leftGunPoint.X = 82;
             _leftGunPoint.Y = 20;
             _rightGunPoint.X = 82;
             _rightGunPoint.Y = 94;
 
             _leftGunDirectionFromCentre = _leftGunPoint - Origin;
-            _rightGunDirectionFromCentre = _rightGunPoint - Origin;
+            _rightGunDirectionFromCentre = _rightGunPoint - Origin;*/
 
             _rectangle.Location = Position.ToPoint();
             _rectangle.Width = Texture.Width;
@@ -68,6 +75,7 @@ namespace Lab06
 
             // Listen to non-intersection between Asteroid and Spaceship objects
             _game.CollisionEngine.Listen(typeof(Asteroid), typeof(Spaceship), CollisionEngine.AABB);
+            _game.CollisionEngine.Listen(typeof(Background), typeof(Spaceship), CollisionEngine.NotAABB);
         }
 
         public override void Update()
@@ -97,11 +105,11 @@ namespace Lab06
                 movementDirection.X = 1f;
             }
 
-            Vector2 velocity = Vector2.Zero;
+            Vector2 velocity = Vector2.Zero + _gravityPull;
 
             if (movementDirection != Vector2.Zero)
             {
-               velocity = Vector2.Normalize(movementDirection) * Speed;
+                velocity = Vector2.Normalize(movementDirection) * Speed;
             }
             
             Position += velocity * ScalableGameTime.DeltaTime;
@@ -114,7 +122,7 @@ namespace Lab06
             // Handle shooting missiles
             if (mouseState.LeftButton == ButtonState.Pressed)
             {
-                FireMissile();
+                FireRicochetMissile();
             }
 
             else if(mouseState.RightButton == ButtonState.Pressed)
@@ -131,7 +139,7 @@ namespace Lab06
             _game.SpriteBatch.End();
         }
 
-        private void FireMissile()
+        /*private void FireMissile()
         {
             if(LastFiredTime + CoolDownTime <= ScalableGameTime.RealTime)
             {
@@ -158,20 +166,35 @@ namespace Lab06
 
                 _shootingSoundEffect.Play();    
             }
-        }
+        }*/
 
         private void FireBlackHoleMissile()
+        {
+            if (GameObjectCollection.FindObjectsByType(typeof(BlackHoleMissile))?.Length > 0)
+                return;
+
+            Vector2 direction = new Vector2(MathF.Cos(Orientation), MathF.Sin(Orientation));
+            Vector2 displacement = Texture.Width / 2f * direction;
+
+            BlackHoleMissile missile = new BlackHoleMissile();
+            missile.Position = this.Position; //+ displacement;
+            missile.Orientation = this.Orientation;
+            missile.LoadContent();
+            missile.Initialize();
+
+
+            _blackHoleMissileSoundEffect.Play();
+
+        }
+
+        private void FireRicochetMissile()
         {
             if (LastFiredTime + CoolDownTime <= ScalableGameTime.RealTime)
             {
                 Vector2 direction = new Vector2(MathF.Cos(Orientation), MathF.Sin(Orientation));
                 Vector2 displacement = Texture.Width / 2f * direction;
 
-                // Calculate gun point vectors
-                _leftGunVector = Vector2.Rotate(_leftGunDirectionFromCentre, Orientation);
-                _rightGunVector = Vector2.Rotate(_rightGunDirectionFromCentre, Orientation);
-
-                BlackHoleMissile missile = new BlackHoleMissile();
+                RicochetMissile missile = new RicochetMissile();
                 missile.Position = this.Position; //+ displacement;
                 missile.Orientation = this.Orientation;
                 missile.LoadContent();
@@ -179,8 +202,34 @@ namespace Lab06
 
                 LastFiredTime = ScalableGameTime.RealTime;
 
-                _shootingSoundEffect.Play();
+                _ricochetMissileSoundEffect.Play();
             }
+        }
+
+        private void FireControllableMissile()
+        {
+            if (_activeMissile != null)
+                return;
+
+            ControllableMissile missile = new ControllableMissile();
+            missile.Position = this.Position;
+            missile.Orientation = this.Orientation;
+            missile.LoadContent();
+            missile.Initialize();
+
+            _activeMissile = missile;
+
+            _ricochetMissileSoundEffect.Play();
+        }
+
+        public void ApplyGravityPull(Vector2 force)
+        {
+            _gravityPull += force;
+        }
+
+        public void ResetGravityPull()
+        {
+            _gravityPull = Vector2.Zero;
         }
 
         string ICollidable.GetGroupName()
@@ -196,12 +245,13 @@ namespace Lab06
 
         void ICollidable.OnCollision(CollisionInfo collisionInfo)
         {
-            if (collisionInfo.Other is Asteroid)
+            if (collisionInfo.Other is Asteroid || collisionInfo.Other is Background)
             {
-                Debug.WriteLine("Spaceship collided with Asteroid!");
-                //GameObjectCollection.DeInstantiate(this);
-                //_explosionSoundEffect.Play();
+                GameObjectCollection.DeInstantiate(this);
+                _spaceshipDeathSoundEffect.Play();
             }
         }
+
+        
     }
 }

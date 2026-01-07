@@ -1,5 +1,6 @@
 ﻿using GAlgoT2530.Engine;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Lab06
     public class Background : SpriteGameObject, ICollidable
     {
         private Rectangle _rectangle;
+
         public Background(string textureName) : base(textureName)
         {
             // Intentionally left blank

@@ -1,5 +1,4 @@
 ﻿using GAlgoT2530.Engine;
-using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,27 +12,21 @@ using System.Threading.Tasks;
 
 namespace Lab06
 {
-    public class BlackHoleMissile : SpriteGameObject, ICollidable
+    public class RicochetMissile : SpriteGameObject, ICollidable
     {
         public float Speed = 200f;
         private Vector2 _velocity;
         private Rectangle _rectangle;
-        
 
-        private float _gravityRadius = 150f;
-        private float _gravityStrength = 500f;
-        private float _shipGravityRadius = 250f;
-        private float _shipGravityStrength = 250f;
-        private Spaceship _spaceship;
-
-        private SoundEffect _gravityPopSoundEffect;
         private SoundEffect _explosionSoundEffect;
+        private SoundEffect _asteroidDestroyedSoundEffect;
 
-        private float _lifetime = 5f;
-        private float _activateTime = 0.5f;
-        private float _timeSinceSpawn = 0f;
+        private float _richochetRadius = 150f;
+        private int _killCount = 0;
+        private int _maxKillCount = 4;
+        private bool _hasHit = false;
 
-        public BlackHoleMissile() : base("blackHoleMissile")
+        public RicochetMissile() : base("spaceMissiles_015_right")
         {
 
         }
@@ -43,8 +36,8 @@ namespace Lab06
             // Reusing SpriteGameObject.LoadContent() will load the texture;
             base.LoadContent();
 
-            _gravityPopSoundEffect = _game.Content.Load<SoundEffect>("gravity pop");
             _explosionSoundEffect = _game.Content.Load<SoundEffect>("enemyExplosion");
+            _asteroidDestroyedSoundEffect = _game.Content.Load<SoundEffect>("asteroidDestroyed");
         }
 
         public override void Initialize()
@@ -65,33 +58,25 @@ namespace Lab06
             _rectangle.Width = Texture.Width;
             _rectangle.Height = Texture.Height;
 
-            // Listen to non-intersection between Background and BlackHoleMissile objects
-            _game.CollisionEngine.Listen(typeof(Background), typeof(BlackHoleMissile), CollisionEngine.NotAABB);
+            // Listen to non-intersection between Background and RicochetMissile objects
+            _game.CollisionEngine.Listen(typeof(Background), typeof(RicochetMissile), CollisionEngine.NotAABB);
 
-            // Listen to intersection between Asteroid and BlackHoleMissile objects
-            _game.CollisionEngine.Listen(typeof(Asteroid), typeof(BlackHoleMissile), CollisionEngine.AABB);
+            // Listen to non-intersection between Asteroid and RicochetMissile objects
+            _game.CollisionEngine.Listen(typeof(Asteroid), typeof(RicochetMissile), CollisionEngine.AABB);
         }
 
         public override void Update()
         {
-            _timeSinceSpawn += ScalableGameTime.DeltaTime;
+            Position += _velocity * ScalableGameTime.DeltaTime;
 
-            if (_timeSinceSpawn >= _activateTime)
+            if(_hasHit)
             {
-                _velocity = Vector2.Zero;
+                StartRichochet();
 
-                StartGravityPull();
-                PullSpaceship();
-            }
-            else
-            {
-                Position += _velocity * ScalableGameTime.DeltaTime;
-            }
-
-            if (_timeSinceSpawn >= _lifetime)
-            {
-                _spaceship?.ResetGravityPull();
-                GameObjectCollection.DeInstantiate(this);
+                if (_killCount >= _maxKillCount)
+                {
+                    GameObjectCollection.DeInstantiate(this);
+                }
             }
         }
 
@@ -103,11 +88,16 @@ namespace Lab06
             _game.SpriteBatch.End();
         }
 
-        private void StartGravityPull()
+        private Asteroid FindNearestAsteroid()
         {
             GameObject[] asteroids = GameObjectCollection.FindObjectsByType(typeof(Asteroid));
 
-            if (asteroids == null) return;
+            if (asteroids == null) 
+                return null;
+
+            Asteroid nearestAsteroid = null;
+
+            float closestDistanceSq = _richochetRadius * _richochetRadius;
 
             foreach (GameObject obj in asteroids)
             {
@@ -115,39 +105,29 @@ namespace Lab06
 
                 if (asteroid == null) continue;
 
-                Vector2 direction = Position - asteroid.Position;
-                float distance = direction.Length();
+                float distSq = Vector2.DistanceSquared(Position, asteroid.Position);
 
-                if (distance < _gravityRadius)
+                if (distSq <= closestDistanceSq)
                 {
-                    asteroid.PullTowardsBlackHole(Position, _gravityStrength);
-                }
-                else
-                {
-                    asteroid.ReturnToInitialVelocity();
+                    closestDistanceSq = distSq;
+                    nearestAsteroid = asteroid;
                 }
             }
+
+            return nearestAsteroid;
         }
 
-        private void PullSpaceship()
+        private void StartRichochet()
         {
-            GameObject spaceshipObject = GameObjectCollection.FindObjectsByType(typeof(Spaceship))?.FirstOrDefault(); // gets the first element
-            if (spaceshipObject == null) return;
+            Asteroid targetAsteroid = FindNearestAsteroid();
 
-            _spaceship = spaceshipObject as Spaceship;
-            if (_spaceship == null) return;
-
-            Vector2 direction = Position - _spaceship.Position;
-            float distance = direction.Length();
-
-            if (distance > _shipGravityRadius)
-                return;
-
-            direction.Normalize();
-
-            Vector2 force = direction * _shipGravityStrength * ScalableGameTime.DeltaTime;
-
-            _spaceship.ApplyGravityPull(force);
+            if (targetAsteroid != null)
+            {
+                Speed += 20f; // Increase speed after each hit
+                Vector2 directionToTarget = Vector2.Normalize(targetAsteroid.Position - Position);
+                _velocity = directionToTarget * Speed;
+                Orientation = MathF.Atan2(directionToTarget.Y, directionToTarget.X);
+            }
         }
 
         string ICollidable.GetGroupName()
@@ -172,7 +152,10 @@ namespace Lab06
             else if (collisionInfo.Other is Asteroid asteroid)
             {
                 GameObjectCollection.DeInstantiate(asteroid);
-                _gravityPopSoundEffect.Play();
+                _asteroidDestroyedSoundEffect.Play();
+
+                _hasHit = true;
+                _killCount++;
             }
         }
     }

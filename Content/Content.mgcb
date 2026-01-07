@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin asteroidDestroyed.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:asteroidDestroyed.wav
+
 #begin blackHoleMissile.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -24,6 +30,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:blackHoleMissile.png
+
+#begin blackHoleShot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:blackHoleShot.wav
 
 #begin crosshair179.png
 /importer:TextureImporter
@@ -43,6 +55,12 @@
 /processorParam:Quality=Best
 /build:enemyExplosion.wav
 
+#begin gravity pop.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:gravity pop.wav
+
 #begin laserShooting.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
@@ -60,6 +78,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:purple.png
+
+#begin ricochetShot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:ricochetShot.wav
 
 #begin spaceMeteors_002_small.png
 /importer:TextureImporter
@@ -84,6 +108,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:spaceMissiles_015_right.png
+
+#begin spaceshipDeath.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:spaceshipDeath.wav
 
 #begin spaceShips_009_right.png
 /importer:TextureImporter
