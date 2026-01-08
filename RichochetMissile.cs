@@ -1,4 +1,5 @@
 ﻿using GAlgoT2530.Engine;
+using Lab06;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,6 +10,20 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+// Acknowledgement / Honour Code:
+// - Codes are written by going through available classes such as GameObjectCollection.cs
+//   to see what functions are available to use.
+// - Visual Studio's autocomplete feature sometimes provides insights on how to approach the
+//   intended functionality.
+
+//Missile 1 (Ricochet Missile): RichochetMissile.cs
+
+// - Press Left Click to shoot this missile.
+// - After the first hit, the missile will ricochet/move towards the next nearest asteroid in a
+//   certain radius.
+// - The missile has a maximum kill count of 3, so after hitting 3 asteroids, it will destroy itself.
+// - This missile rewards the players for hitting an asteroid.
 
 namespace Lab06
 {

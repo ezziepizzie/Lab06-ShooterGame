@@ -1,4 +1,5 @@
 ﻿using GAlgoT2530.Engine;
+using Lab06;
 using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -8,8 +9,25 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+
+// Acknowledgement / Honour Code:
+// - Codes are written by going through available classes such as GameObjectCollection.cs
+//   to see what functions are available to use.
+// - Visual Studio's autocomplete feature sometimes provides insights on how to approach the
+//   intended functionality.
+
+// Missile 2 (Black Hole Missile): BlackHoleMissile.cs
+
+// - Press Right Click to shoot this missile
+// - This missile has a short range and starts activating 0.5s after the initial shot.
+// - The missile will pull in any near asteroids in a certain radius.
+// - The missile will also pull the player/spaceship, where the player can move in the 
+//   opposite direction to fight against it.
+// - Any asteroids or spaceship that gets pull in will be destroyed.
+// - Only one black hole missile can be shot at a time.
 
 namespace Lab06
 {
@@ -70,6 +88,9 @@ namespace Lab06
 
             // Listen to intersection between Asteroid and BlackHoleMissile objects
             _game.CollisionEngine.Listen(typeof(Asteroid), typeof(BlackHoleMissile), CollisionEngine.AABB);
+
+            // Listen to intersection between Asteroid and BlackHoleMissile objects
+            _game.CollisionEngine.Listen(typeof(OrbiterMissile), typeof(BlackHoleMissile), CollisionEngine.AABB);
         }
 
         public override void Update()
@@ -177,6 +198,12 @@ namespace Lab06
 
             else if (collisionInfo.Other is Spaceship spaceship)
             {
+                _gravityPopSoundEffect.Play();
+            }
+
+            else if (collisionInfo.Other is OrbiterMissile orbiterMissile)
+            {
+                GameObjectCollection.DeInstantiate(orbiterMissile);
                 _gravityPopSoundEffect.Play();
             }
         }

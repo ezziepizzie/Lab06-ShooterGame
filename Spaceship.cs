@@ -31,7 +31,7 @@ namespace Lab06
         private Rectangle _rectangle;
         public ControllableMissile _activeMissile;
 
-        private SoundEffect _ricochetMissileSoundEffect;
+        private SoundEffect _orbiterMissileSoundEffect;
         private SoundEffect _blackHoleMissileSoundEffect;
         private SoundEffect _spaceshipDeathSoundEffect;
 
@@ -45,7 +45,7 @@ namespace Lab06
             // Reusing SpriteGameObject.LoadContent() will load the texture;
             base.LoadContent();
 
-            _ricochetMissileSoundEffect = _game.Content.Load<SoundEffect>("ricochetShot");
+            _orbiterMissileSoundEffect = _game.Content.Load<SoundEffect>("ricochetShot");
             _blackHoleMissileSoundEffect = _game.Content.Load<SoundEffect>("blackHoleShot");
             _spaceshipDeathSoundEffect = _game.Content.Load<SoundEffect>("spaceshipDeath");
         }
@@ -127,7 +127,7 @@ namespace Lab06
             // Handle shooting missiles
             if (mouseState.LeftButton == ButtonState.Pressed)
             {
-                FireRicochetMissile();
+                FireOrbiterMissile();
             }
 
             else if(mouseState.RightButton == ButtonState.Pressed)
@@ -198,15 +198,34 @@ namespace Lab06
                 Vector2 displacement = Texture.Width / 2f * direction;
 
                 RicochetMissile missile = new RicochetMissile();
-                missile.Position = this.Position; //+ displacement;
+                missile.Position = this.Position; 
                 missile.Orientation = this.Orientation;
                 missile.LoadContent();
                 missile.Initialize();
 
                 LastFiredTime = ScalableGameTime.RealTime;
 
-                _ricochetMissileSoundEffect.Play();
+                _orbiterMissileSoundEffect.Play();
             }
+        }
+
+        private void FireOrbiterMissile()
+        {
+            if (GameObjectCollection.FindObjectsByType(typeof(OrbiterMissile))?.Length > 0)
+                return;
+        
+            Vector2 direction = new Vector2(MathF.Cos(Orientation), MathF.Sin(Orientation));
+            Vector2 displacement = Texture.Width / 2f * direction;
+
+            OrbiterMissile missile = new OrbiterMissile();
+            missile.Position = this.Position; 
+            missile.Orientation = this.Orientation;
+            missile.LoadContent();
+            missile.Initialize();
+
+
+            _orbiterMissileSoundEffect.Play();
+
         }
 
         private void FireControllableMissile()
@@ -222,7 +241,7 @@ namespace Lab06
 
             _activeMissile = missile;
 
-            _ricochetMissileSoundEffect.Play();
+            _orbiterMissileSoundEffect.Play();
         }
 
         public void ApplyGravityPull(Vector2 force)

@@ -88,7 +88,7 @@ namespace Lab06
             if (distance > 0)
             {
                 direction.Normalize();
-                // Directly set velocity toward the black hole center
+                
                 _velocity = direction * pullSpeed;
             }
         }
