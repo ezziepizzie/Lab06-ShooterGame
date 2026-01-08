@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Monogame/Lab06-ShooterGame/Content/laserShooting.wav</SourceFile>
-  <SourceTime>2026-01-05T11:41:39.7693662+08:00</SourceTime>
-  <DestFile>D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/laserShooting.xnb</DestFile>
-  <DestTime>2026-01-05T11:42:51.2223941+08:00</DestTime>
+  <SourceFile>C:/Monogame Projects/Lab06/Content/laserShooting.wav</SourceFile>
+  <SourceTime>2023-04-12T22:47:26+08:00</SourceTime>
+  <DestFile>C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/laserShooting.xnb</DestFile>
+  <DestTime>2026-01-08T20:36:23.440092+08:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

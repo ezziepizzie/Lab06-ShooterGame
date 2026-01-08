@@ -1,14 +1,14 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/Monogame/Lab06-ShooterGame/Content/asteroidDestroyed.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/asteroidDestroyed.xnb","SoundEffectProcessor","SoundEffectContent",47778,47839,0.2957454
-"D:/Monogame/Lab06-ShooterGame/Content/blackHoleMissile.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/blackHoleMissile.xnb","TextureProcessor","Texture2DContent",4833,2585,0.1013577
-"D:/Monogame/Lab06-ShooterGame/Content/blackHoleShot.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/blackHoleShot.xnb","SoundEffectProcessor","SoundEffectContent",138390,138451,0.2304336
-"D:/Monogame/Lab06-ShooterGame/Content/crosshair179.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/crosshair179.xnb","TextureProcessor","Texture2DContent",271,16469,0.08865
-"D:/Monogame/Lab06-ShooterGame/Content/enemyExplosion.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/enemyExplosion.xnb","SoundEffectProcessor","SoundEffectContent",74028,74031,0.6093332
-"D:/Monogame/Lab06-ShooterGame/Content/gravity pop.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/gravity pop.xnb","SoundEffectProcessor","SoundEffectContent",96846,96873,0.2985307
-"D:/Monogame/Lab06-ShooterGame/Content/laserShooting.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/laserShooting.xnb","SoundEffectProcessor","SoundEffectContent",55694,55673,0.2013999
-"D:/Monogame/Lab06-ShooterGame/Content/purple.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/purple.xnb","TextureProcessor","Texture2DContent",3132,262229,0.0193878
-"D:/Monogame/Lab06-ShooterGame/Content/ricochetShot.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/ricochetShot.xnb","SoundEffectProcessor","SoundEffectContent",38292,38353,0.2056447
-"D:/Monogame/Lab06-ShooterGame/Content/spaceMeteors_002_small.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/spaceMeteors_002_small.xnb","TextureProcessor","Texture2DContent",1997,11745,0.0021946
-"D:/Monogame/Lab06-ShooterGame/Content/spaceMissiles_015_right.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/spaceMissiles_015_right.xnb","TextureProcessor","Texture2DContent",839,1285,0.0013284
-"D:/Monogame/Lab06-ShooterGame/Content/spaceshipDeath.wav","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/spaceshipDeath.xnb","SoundEffectProcessor","SoundEffectContent",79642,79703,0.2191028
-"D:/Monogame/Lab06-ShooterGame/Content/spaceShips_009_right.png","D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/spaceShips_009_right.xnb","TextureProcessor","Texture2DContent",6172,37477,0.0028665
+"C:/Monogame Projects/Lab06/Content/asteroidDestroyed.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/asteroidDestroyed.xnb","SoundEffectProcessor","SoundEffectContent",47778,47839,0.8518549
+"C:/Monogame Projects/Lab06/Content/blackHoleMissile.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/blackHoleMissile.xnb","TextureProcessor","Texture2DContent",4833,2585,0.0410364
+"C:/Monogame Projects/Lab06/Content/blackHoleShot.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/blackHoleShot.xnb","SoundEffectProcessor","SoundEffectContent",138390,138451,0.1259131
+"C:/Monogame Projects/Lab06/Content/crosshair179.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/crosshair179.xnb","TextureProcessor","Texture2DContent",271,16469,0.004291
+"C:/Monogame Projects/Lab06/Content/enemyExplosion.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/enemyExplosion.xnb","SoundEffectProcessor","SoundEffectContent",74028,74031,0.1206853
+"C:/Monogame Projects/Lab06/Content/gravity pop.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/gravity pop.xnb","SoundEffectProcessor","SoundEffectContent",96846,96873,0.1098929
+"C:/Monogame Projects/Lab06/Content/laserShooting.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/laserShooting.xnb","SoundEffectProcessor","SoundEffectContent",55694,55673,0.1068057
+"C:/Monogame Projects/Lab06/Content/purple.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/purple.xnb","TextureProcessor","Texture2DContent",3132,262229,0.0176633
+"C:/Monogame Projects/Lab06/Content/ricochetShot.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/ricochetShot.xnb","SoundEffectProcessor","SoundEffectContent",38292,38353,0.0964561
+"C:/Monogame Projects/Lab06/Content/spaceMeteors_002_small.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/spaceMeteors_002_small.xnb","TextureProcessor","Texture2DContent",1997,11745,0.0022334
+"C:/Monogame Projects/Lab06/Content/spaceMissiles_015_right.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/spaceMissiles_015_right.xnb","TextureProcessor","Texture2DContent",839,1285,0.0033128
+"C:/Monogame Projects/Lab06/Content/spaceshipDeath.wav","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/spaceshipDeath.xnb","SoundEffectProcessor","SoundEffectContent",79642,79703,0.1073455
+"C:/Monogame Projects/Lab06/Content/spaceShips_009_right.png","C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/spaceShips_009_right.xnb","TextureProcessor","Texture2DContent",6172,37477,0.0040519

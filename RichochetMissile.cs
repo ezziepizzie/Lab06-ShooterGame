@@ -23,9 +23,9 @@ namespace Lab06
 
         private float _richochetRadius = 150f;
         private int _killCount = 0;
-        private int _maxKillCount = 4;
+        private int _maxKillCount = 3;
         private bool _hasHit = false;
-
+        
         public RicochetMissile() : base("spaceMissiles_015_right")
         {
 
@@ -97,21 +97,16 @@ namespace Lab06
 
             Asteroid nearestAsteroid = null;
 
-            float closestDistanceSq = _richochetRadius * _richochetRadius;
-
             foreach (GameObject obj in asteroids)
             {
                 Asteroid asteroid = obj as Asteroid;
 
                 if (asteroid == null) continue;
 
-                float distSq = Vector2.DistanceSquared(Position, asteroid.Position);
+                float distance = Vector2.Distance(Position, asteroid.Position);
 
-                if (distSq <= closestDistanceSq)
-                {
-                    closestDistanceSq = distSq;
+                if (distance <= _richochetRadius)
                     nearestAsteroid = asteroid;
-                }
             }
 
             return nearestAsteroid;
@@ -123,7 +118,8 @@ namespace Lab06
 
             if (targetAsteroid != null)
             {
-                Speed += 20f; // Increase speed after each hit
+                Speed += 20f;
+
                 Vector2 directionToTarget = Vector2.Normalize(targetAsteroid.Position - Position);
                 _velocity = directionToTarget * Speed;
                 Orientation = MathF.Atan2(directionToTarget.Y, directionToTarget.X);

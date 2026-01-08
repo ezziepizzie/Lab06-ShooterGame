@@ -86,3 +86,11 @@ D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\asteroidDestroyed.xnb
 D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\blackHoleShot.xnb
 D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\ricochetShot.xnb
 D:\Monogame\Lab06-ShooterGame\bin\Debug\net9.0\Content\spaceshipDeath.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\gravity pop.ogg
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\asteroidDestroyed.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\blackHoleMissile.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\blackHoleShot.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\gravity pop.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\ricochetShot.xnb
+C:\Monogame Projects\Lab06\bin\Debug\net9.0\Content\spaceshipDeath.xnb
+C:\Monogame Projects\Lab06\obj\Debug\net9.0\Lab06.sourcelink.json

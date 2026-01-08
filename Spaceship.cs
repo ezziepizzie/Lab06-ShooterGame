@@ -75,7 +75,12 @@ namespace Lab06
 
             // Listen to non-intersection between Asteroid and Spaceship objects
             _game.CollisionEngine.Listen(typeof(Asteroid), typeof(Spaceship), CollisionEngine.AABB);
+
+            // Listen to non-intersection between Background and Spaceship objects
             _game.CollisionEngine.Listen(typeof(Background), typeof(Spaceship), CollisionEngine.NotAABB);
+
+            // Listen to intersection between BlackHoleMissile and Spaceship objects
+            _game.CollisionEngine.Listen(typeof(BlackHoleMissile), typeof(Spaceship), CollisionEngine.AABB);
         }
 
         public override void Update()
@@ -177,14 +182,12 @@ namespace Lab06
             Vector2 displacement = Texture.Width / 2f * direction;
 
             BlackHoleMissile missile = new BlackHoleMissile();
-            missile.Position = this.Position; //+ displacement;
+            missile.Position = this.Position + Vector2.Rotate(new Vector2(80,0), Orientation); //+ displacement;
             missile.Orientation = this.Orientation;
             missile.LoadContent();
             missile.Initialize();
 
-
             _blackHoleMissileSoundEffect.Play();
-
         }
 
         private void FireRicochetMissile()
@@ -245,10 +248,12 @@ namespace Lab06
 
         void ICollidable.OnCollision(CollisionInfo collisionInfo)
         {
-            if (collisionInfo.Other is Asteroid || collisionInfo.Other is Background)
+            if (collisionInfo.Other is Asteroid || collisionInfo.Other is Background || collisionInfo.Other is BlackHoleMissile)
             {
                 GameObjectCollection.DeInstantiate(this);
                 _spaceshipDeathSoundEffect.Play();
+
+                ScalableGameTime.TimeScale = 0f;
             }
         }
 

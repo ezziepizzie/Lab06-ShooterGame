@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Monogame/Lab06-ShooterGame/Content/asteroidDestroyed.wav</SourceFile>
-  <SourceTime>2026-01-07T22:22:01.994+08:00</SourceTime>
-  <DestFile>D:/Monogame/Lab06-ShooterGame/Content/bin/DesktopGL/Content/asteroidDestroyed.xnb</DestFile>
-  <DestTime>2026-01-07T22:25:05.1099833+08:00</DestTime>
+  <SourceFile>C:/Monogame Projects/Lab06/Content/asteroidDestroyed.wav</SourceFile>
+  <SourceTime>2026-01-08T20:15:17.1200656+08:00</SourceTime>
+  <DestFile>C:/Monogame Projects/Lab06/Content/bin/DesktopGL/Content/asteroidDestroyed.xnb</DestFile>
+  <DestTime>2026-01-08T20:36:22.9166316+08:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

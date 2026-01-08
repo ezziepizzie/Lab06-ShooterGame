@@ -174,6 +174,11 @@ namespace Lab06
                 GameObjectCollection.DeInstantiate(asteroid);
                 _gravityPopSoundEffect.Play();
             }
+
+            else if (collisionInfo.Other is Spaceship spaceship)
+            {
+                _gravityPopSoundEffect.Play();
+            }
         }
     }
 }
